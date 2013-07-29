@@ -1,0 +1,21 @@
+{
+  "name": "mongoose-shortid",
+  "version": "0.0.1",
+  "description": "Plugin to allow Mongoose models to automatically create a short key as an alternative to using the id field",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": "",
+  "keywords": [
+    "mongoose",
+    "short",
+    "id"
+  ],
+  "devDependencies": {
+    "mongoose": ">=3.0.0",
+    "chai": "*"
+  },
+  "author": "Nathan Oehlman",
+  "license": "MIT"
+}
