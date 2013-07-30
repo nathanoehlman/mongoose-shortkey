@@ -23,7 +23,12 @@ describe('Mongoose ShortID', function(){
         newDoc.save(function(err, saved) {
             if (err) return done(err);
             if (!saved.sid) return done('No short ID saved');
-            return done();
+            var id = saved.sid;
+
+            newDoc.save(function(err, saved) {
+                id.should.equal(saved.sid);
+                return done(err);
+            });            
         });        
         
     });
